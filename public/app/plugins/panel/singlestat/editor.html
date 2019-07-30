@@ -131,4 +131,19 @@
       <gf-form-switch class="gf-form" label-class="width-10" switch-class="max-width-6" label="Threshold markers" checked="ctrl.panel.gauge.thresholdMarkers" on-change="ctrl.render()"></gf-form-switch>
     </div>
   </div>
+
+  <div class="section gf-form-group">
+    <h5 class="section-heading">Null value</h5>
+    <div class="gf-form">
+      <label class="gf-form-label width-7">Null value</label>
+      <div class="gf-form-select-wrapper">
+        <select
+          class="gf-form-input max-width-9"
+          ng-model="ctrl.panel.nullPointMode"
+          ng-options="f for f in ['connected', 'null', 'null as zero']"
+          ng-change="ctrl.refresh()"
+        ></select>
+      </div>
+    </div>
+  </div>
 </div>

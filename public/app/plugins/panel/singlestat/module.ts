@@ -65,7 +65,7 @@ class SingleStatCtrl extends MetricsPanelCtrl {
     mappingTypes: [{ name: 'value to text', value: 1 }, { name: 'range to text', value: 2 }],
     rangeMaps: [{ from: 'null', to: 'null', text: 'N/A' }],
     mappingType: 1,
-    nullPointMode: 'connected',
+    nullPointMode: 'null',
     valueName: 'avg',
     prefixFontSize: '50%',
     valueFontSize: '80%',
@@ -621,8 +621,8 @@ class SingleStatCtrl extends MetricsPanelCtrl {
             elem.css('background-color', '');
           }
         } else {
-          $panelContainer.css('background-color', '');
-          elem.css('background-color', '');
+          $panelContainer.css('background-color', 'rgb(104, 104, 104)');
+          elem.css('background-color', 'rgb(104, 104, 104)');
         }
       } else {
         $panelContainer.css('background-color', '');
